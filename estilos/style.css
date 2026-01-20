@@ -13,6 +13,10 @@
     --sb: #F2E9E9;
 }
 
+p {
+    color: var(--sb);
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5me;
@@ -50,5 +54,126 @@ header nav a:hover {
     background-color: var(--ctt);
     color: var(--header-footer);
 
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 90vw 1fr;
+    
+}
+
+main section#sobre {
+    grid-column: 2;
+}
+
+main section div#sec-principal{
+    text-align: center; 
+}
+
+main section div#sec-principal h1{
+    margin: 20px 0px 5px 0;
+}
+
+main section div#sec-principal img {
+    width: 200px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    overflow: hidden;
+    margin: 20px 0px;
+    border: 5px solid var(--header-footer);
+    
+}
+
+main section div.sobre-cf {
+    text-align: center;
+    line-height: 1.3em;
+}
+
+main section div.sobre-cf h2{
+    margin-bottom: 10px;
+}
+
+main section div.sobre-cf H2 span {
+    color: var(--ctt);
+}
+
+section#cd {
+    grid-column: 2;
+    
+}
+section#cd h2 {
+    text-align: center;
+    margin: 40px 0px;
+}
+
+section#cd h2 span {
+    color: var(--ctt);
+}
+
+.bebidas h3 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.lanches h3 {
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+section#ctt {
+    grid-column: 2;
+    text-align: center;
+    margin: 30px 0;
+}
+
+section#ctt h2 span {
+    color: var(--ctt);
+}
+
+div.ctt h3 {
+    margin: 10px 0;
+}
+
+div.ctt p {
+    cursor: pointer;
+}
+
+div.ctt p.wt:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--header-footer);
+}
+
+footer P {
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media screen and (min-width: 768px){
+    main {
+        grid-template-columns: auto 300px 1fr auto ;
+        grid-template-rows: 400px 434px;
+    }
+
+    section#sobre {
+        grid-column: 2/3;
+        height: fit-content;
+        position: sticky;
+        top: 65px;
+    }
+
+    section#cd {
+        grid-column: 3/4;
+        text-align: center;
+    }
+
+    section#ctt {
+        grid-column: 3/4;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
 }
 
