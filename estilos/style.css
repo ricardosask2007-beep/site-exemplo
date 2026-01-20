@@ -153,7 +153,7 @@ footer P {
 
 @media screen and (min-width: 768px){
     main {
-        grid-template-columns: auto 300px 1fr auto ;
+        grid-template-columns: auto 500px 1fr auto ;
         grid-template-rows: 400px 434px;
     }
 
