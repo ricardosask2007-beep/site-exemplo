@@ -4,3 +4,12 @@
     margin: 0px;
     padding: 0px;
 }
+
+:root {
+    header-footer: #40301d;
+    txt: #403a1d;
+    bg: #8c8380;
+    ctt: #d9cccc;
+    sb: #F2E9E9;
+}
+
